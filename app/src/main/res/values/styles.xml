@@ -1,0 +1,559 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#2a2a2a</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">#3232FF</item>
+        <item name="colorControlNormal">#a8a8a8</item>
+    </style>
+
+    <style name="listView_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="main_activity_main_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="main_title_container_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/base_dark_grey_color</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="title_image_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginTop">@dimen/eight</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="title_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_gray</item>
+        <item name="android:textSize">@dimen/thirty_sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="footer_style">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginRight">@dimen/eight</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_gray</item>
+    </style>
+
+    <style name="fragment_viewer_style">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">@dimen/zero</item>
+    </style>
+
+    <style name="main_itemlist_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/biggest_line_background</item>
+    </style>
+
+    <style name="itemlist_container_style">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginRight">@dimen/eight</item>
+        <item name="android:layout_marginTop">@dimen/eight</item>
+        <item name="android:background">@drawable/line_background</item>
+    </style>
+
+    <style name="listview_style">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">@dimen/zero</item>
+    </style>
+
+    <style name="listview_textview_style">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/search_line_background</item>
+        <item name="android:padding">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <style name="main_listitem_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeight</item>
+    </style>
+
+    <style name="listitem_image_style">
+        <item name="android:layout_width">@dimen/forty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginTop">@dimen/eight</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:cropToPadding">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="listitem_textview_style">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginRight">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/repo_name_color_blue</item>
+    </style>
+
+    <style name="listitem_second_imageView">
+        <item name="android:layout_width">@dimen/forty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginTop">@dimen/eight</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:cropToPadding">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="listitem_second_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <style name="main_search_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/biggest_line_background</item>
+    </style>
+
+    <style name="search_container_style">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginRight">@dimen/eight</item>
+        <item name="android:layout_marginTop">@dimen/eight</item>
+        <item name="android:background">@drawable/line_background</item>
+    </style>
+
+    <style name="search_textview_style">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/search_line_background</item>
+        <item name="android:padding">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <style name="search_edittext_style">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sixteen</item>
+        <item name="android:layout_marginRight">@dimen/sixteen</item>
+        <item name="android:layout_marginTop">@dimen/sixteen</item>
+        <item name="android:inputType">text</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:theme">@style/EditTextStyle</item>
+    </style>
+
+    <style name="search_button_style">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/thirty_two</item>
+        <item name="android:layout_marginTop">@dimen/sixteen</item>
+        <item name="android:background">@drawable/button_line_background</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <style name="detail_layout_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/biggest_line_background</item>
+    </style>
+
+    <style name="detail_layout_title_style">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_title_image">
+        <item name="android:layout_width">@dimen/hundred</item>
+        <item name="android:layout_height">@dimen/hundred</item>
+        <item name="android:layout_marginBottom">@dimen/sixteen</item>
+        <item name="android:layout_marginLeft">@dimen/sixteen</item>
+        <item name="android:layout_marginTop">@dimen/sixteen</item>
+    </style>
+
+    <style name="detail_layout_style_text_title">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginLeft">@dimen/sixteen</item>
+        <item name="android:layout_marginRight">@dimen/eight</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_gray</item>
+        <item name="android:textSize">@dimen/twentyfour</item>
+    </style>
+
+    <style name="detail_layout_style_title_textviewew">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sixteen</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_gray</item>
+        <item name="android:textSize">@dimen/eighteen</item>
+    </style>
+
+    <style name="detail_layout_style_1">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/detail_line_background</item>
+    </style>
+
+    <style name="detail_layout_style_2">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/small_detail_line_background</item>
+    </style>
+
+    <style name="detail_layout_style_3">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/detail_line_background</item>
+    </style>
+
+    <style name="detail_layout_style_4">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="android:layout_marginTop">@dimen/sixteen</item>
+        <item name="android:background">@drawable/detail_line_background</item>
+    </style>
+
+    <style name="detail_layout_style_5">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="android:background">@drawable/medium_detail_line_background_three</item>
+    </style>
+
+    <style name="detail_layout_style_6">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="android:background">@drawable/medium_detail_line_background</item>
+    </style>
+
+    <style name="detail_layout_style_7">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="android:background">@drawable/medium_detail_line_background_two</item>
+    </style>
+
+    <style name="detail_layout_style_8">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="android:background">@drawable/detail_line_background</item>
+    </style>
+
+    <style name="detail_layout_style_9">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="android:background">@drawable/medium_detail_line_background_three</item>
+    </style>
+
+    <style name="detail_layout_style_10">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeight</item>
+        <item name="android:layout_marginTop">@dimen/sixteen</item>
+        <item name="android:background">@drawable/xl_detail_line_background</item>
+    </style>
+
+    <style name="detail_layout_style_11">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeight</item>
+        <item name="android:background">@drawable/xl_detail_line_background</item>
+    </style>
+
+    <style name="detail_layout_style_12">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeight</item>
+        <item name="android:background">@drawable/xl_detail_line_background</item>
+    </style>
+
+    <style name="detail_layout_style_1_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginStart">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_1_count_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginStart">@dimen/eight</item>
+        <item name="android:layout_marginTop">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_2_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginStart">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_2_count">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginStart">@dimen/eight</item>
+        <item name="android:layout_marginTop">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_3_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginStart">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_3_count">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginStart">@dimen/eight</item>
+        <item name="android:layout_marginTop">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_4_image">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:cropToPadding">false</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:tint">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_4_text">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+    </style>
+
+    <style name="detail_layout_style_5_image">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:tint">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_5_text">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_6_image">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:tint">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_6_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginStart">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_6_count">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_7_image">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:tint">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_7_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginStart">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_7_texttype">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginTop">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_8_image">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:tint">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_8_date">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_9_image">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:tint">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_9_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_10_image">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:tint">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_10_text_one">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginTop">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+        <item name="android:textSize">@dimen/sixteensp</item>
+    </style>
+
+    <style name="detail_layout_style_10_text_two">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/eight</item>
+        <item name="android:layout_marginStart">@dimen/eight</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+        <item name="android:textSize">@dimen/sixteensp</item>
+    </style>
+
+    <style name="detail_layout_style_10_image_two">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:tint">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_11_image">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:tint">@color/base_dark_grey_color</item>
+    </style>
+
+    <style name="detail_layout_style_11_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/eight</item>
+        <item name="android:layout_marginTop">@dimen/eight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+        <item name="android:textSize">@dimen/sixteensp</item>
+    </style>
+
+    <style name="detail_layout_style_11_image_two">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="detail_layout_style_12_image">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="detail_layout_style_12_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/base_dark_grey_color</item>
+        <item name="android:textSize">@dimen/sixteensp</item>
+    </style>
+
+    <style name="detail_layout_style_12_image_two">
+        <item name="android:layout_width">@dimen/sixty</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+</resources>

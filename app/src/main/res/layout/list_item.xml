@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/main_listitem_style">
+
+
+    <ImageView
+        android:id="@+id/repositoryImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/listitem_image_style"
+        android:contentDescription="@string/content_description"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        app:layout_constraintBottom_toBottomOf="@+id/repositoryImage"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/repositoryImage"
+        app:layout_constraintTop_toTopOf="@+id/repositoryImage"
+        tools:text="@string/fake_repo_name"
+        style="@style/listitem_textview_style" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/staricon"
+        style="@style/listitem_second_imageView"
+        android:contentDescription="@string/content_description"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:text="@string/fake_star_number"
+        style="@style/listitem_second_textview" />
+</android.support.constraint.ConstraintLayout>

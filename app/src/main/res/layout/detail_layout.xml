@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/detail_layout_container">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/detail_layout_title_style">
+
+        <ImageView
+            android:id="@+id/avatarImage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/githubgreylogo"
+            style="@style/detail_layout_style_title_image"
+            android:contentDescription="@string/content_description"/>
+
+        <TextView
+            android:id="@+id/repositoryName"
+            app:layout_constraintBottom_toBottomOf="@+id/avatarImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatarImage"
+            tools:text="@string/fake_repo_kielce_name"
+            style="@style/detail_layout_style_text_title" />
+
+        <TextView
+            android:id="@+id/ownerLogin"
+            app:layout_constraintBottom_toTopOf="@+id/repositoryName"
+            app:layout_constraintStart_toEndOf="@+id/avatarImage"
+            tools:text="@string/fake_owner_name"
+            style="@style/detail_layout_style_title_textviewew" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        style="@style/detail_layout_style_1">
+
+        <TextView
+            android:id="@+id/starsDescription"
+            android:text="@string/stars"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/starsNumber"
+            app:layout_constraintTop_toTopOf="@+id/starsNumber"
+            style="@style/detail_layout_style_1_textview" />
+
+        <TextView
+            android:id="@+id/starsNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/fake_count"
+            style="@style/detail_layout_style_1_count_text" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout6"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        style="@style/detail_layout_style_2">
+
+        <TextView
+            android:id="@+id/watchersNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/fake_count"
+            style="@style/detail_layout_style_2_count" />
+
+        <TextView
+            android:id="@+id/watchersDescription"
+            android:text="@string/watchers"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/watchersNumber"
+            app:layout_constraintTop_toTopOf="@+id/watchersNumber"
+            style="@style/detail_layout_style_2_text" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        style="@style/detail_layout_style_3">
+
+        <TextView
+            android:id="@+id/forksNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/fake_count"
+            style="@style/detail_layout_style_3_count" />
+
+        <TextView
+            android:id="@+id/forksDescription"
+            android:text="@string/forks"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/forksNumber"
+            app:layout_constraintTop_toTopOf="@+id/forksNumber"
+            style="@style/detail_layout_style_3_text" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
+        style="@style/detail_layout_style_4">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lock"
+            style="@style/detail_layout_style_4_image"
+            android:contentDescription="@string/content_description"/>
+
+        <TextView
+            android:id="@+id/typeOfRepo"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            tools:text="Private"
+            style="@style/detail_layout_style_4_text" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout8"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout8"
+        style="@style/detail_layout_style_5">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/programming"
+            style="@style/detail_layout_style_5_image"
+            android:contentDescription="@string/content_description"/>
+
+        <TextView
+            android:id="@+id/programmingDescription"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/fake_package"
+            style="@style/detail_layout_style_5_text" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout9"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8"
+        style="@style/detail_layout_style_6">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/issue"
+            style="@style/detail_layout_style_6_image"
+            android:contentDescription="@string/content_description"/>
+
+        <TextView
+            android:id="@+id/issuesDesription"
+            android:text="@string/issues"
+            app:layout_constraintBottom_toBottomOf="@+id/issuesNumber"
+            app:layout_constraintStart_toEndOf="@+id/issuesNumber"
+            app:layout_constraintTop_toTopOf="@+id/issuesNumber"
+            style="@style/detail_layout_style_6_text" />
+
+        <TextView
+            android:id="@+id/issuesNumber"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/imageView7"
+            tools:text="@string/fake_count"
+            style="@style/detail_layout_style_6_count" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout9"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8"
+        style="@style/detail_layout_style_7">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/branch"
+            style="@style/detail_layout_style_7_image"
+            android:contentDescription="@string/content_description"/>
+
+        <TextView
+            android:id="@+id/branchDescription"
+            android:text="@string/branch"
+            app:layout_constraintBottom_toBottomOf="@+id/branchType"
+            app:layout_constraintStart_toEndOf="@+id/branchType"
+            app:layout_constraintTop_toTopOf="@+id/branchType"
+            style="@style/detail_layout_style_7_text" />
+
+        <TextView
+            android:id="@+id/branchType"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="@+id/imageView8"
+            tools:text="@string/fake_branch"
+            style="@style/detail_layout_style_7_texttype" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout12"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout9"
+        style="@style/detail_layout_style_8">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/calendar"
+            style="@style/detail_layout_style_8_image"
+            android:contentDescription="@string/content_description"/>
+
+        <TextView
+            android:id="@+id/createDate"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="@+id/imageView9"
+            tools:text="@string/fake_date"
+            style="@style/detail_layout_style_8_date" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout12"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout9"
+        style="@style/detail_layout_style_9">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/database"
+            style="@style/detail_layout_style_9_image"
+            android:contentDescription="@string/content_description" />
+
+        <TextView
+            android:id="@+id/sizeNumber"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="@+id/imageView10"
+            tools:text="@string/fake_size"
+            style="@style/detail_layout_style_9_text" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout12"
+        style="@style/detail_layout_style_10">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/update"
+            style="@style/detail_layout_style_10_image"
+            android:contentDescription="@string/content_description"/>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:text="@string/last_update"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView11"
+            style="@style/detail_layout_style_10_text_one" />
+
+        <TextView
+            android:id="@+id/updatedDate"
+            app:layout_constraintBottom_toBottomOf="@+id/textView16"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="@+id/textView16"
+            tools:text="@string/fake_date"
+            style="@style/detail_layout_style_10_text_two" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chevron"
+            style="@style/detail_layout_style_10_image_two"
+            android:contentDescription="@string/content_description" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout10"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        style="@style/detail_layout_style_11">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rss"
+            style="@style/detail_layout_style_11_image"
+            android:contentDescription="@string/content_description"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:text="@string/events"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+            app:layout_constraintStart_toEndOf="@+id/imageView13"
+            app:layout_constraintTop_toTopOf="@+id/imageView13"
+            style="@style/detail_layout_style_11_text" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chevron"
+            style="@style/detail_layout_style_11_image_two"
+            android:contentDescription="@string/content_description"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout10"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout10"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10"
+        style="@style/detail_layout_style_12">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/commit"
+            style="@style/detail_layout_style_12_image"
+            android:contentDescription="@string/content_description"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:text="@string/commits"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+            app:layout_constraintStart_toEndOf="@+id/imageView15"
+            app:layout_constraintTop_toTopOf="@+id/imageView15"
+            style="@style/detail_layout_style_12_text" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chevron"
+            style="@style/detail_layout_style_12_image_two"
+            android:contentDescription="@string/content_description"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
